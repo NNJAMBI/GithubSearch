@@ -1,0 +1,19 @@
+<div class="container-fluid">
+
+    <body>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 offset-md-2">
+
+                    <form (keyup)="findProfile()" #userForm="ngForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search Repositories" [(ngModel)]="userName" name="userName">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </body>
+    </div>
