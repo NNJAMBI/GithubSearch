@@ -1,12 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
+import { UserComponent } from './user/user.component';
 
+import { ProfileComponent } from './profile/profile.component';
 
+const routes: Routes = [
+  { path: '', component: LandingPageComponent},
+  { path: 'user/repositories?', component: ProfileComponent},
+  { path: 'userprofile?', component: UserComponent}
+];
 
 @NgModule({
-  declarations: [],
   imports: [
-    CommonModule
-  ]
-})
+    CommonModule,
+    RouterModule.forRoot(routes)
+ 
+  ],
+  exports: [RouterModule],
+  declarations: []
+ })
 export class AppRoutingModule { }
