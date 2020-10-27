@@ -1,9 +1,71 @@
 <div id="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1>Search Github Users and Repositories</h1>
-          <h2 class="subtitle">Enjoy the easiest way to search and connects with friends on Github</h2>
-          <form class="form-inline signup" role="form">
-          </form>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>Search Github Users and Repositories</h1>
+        <h2 class="subtitle">Enjoy the easiest way to search and connects with friends on Github</h2>
+        <form class="form-inline signup" role="form">
+        </form>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{ user.login}}</h3>
         </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 "> <img alt="User Pic" src="{{ user.avatar_url }}"
+                class="img-circle img-responsive"> </div>
+
+            <div class=" col-md-9 col-lg-9 ">
+              <table class="table table-user-information">
+                <tbody>
+                  <tr>
+                    <td>Full Name: </td>
+                    <td>{{ user.fname}}</td>
+                  </tr>
+                  <tr>
+                    <td>Repositories:</td>
+                    <td>
+                  <tr>
+                    <td>
+                      {{user.repos_url}}
+                    </td>
+                    <td>
+                      <a href="{{user.repo_url}}" class="btn btn-primary">View All</a>
+                    </td>
+                  </tr>
+
+                  </td>
+
+                  </tr>
+                  <tr>
+                    <td>Followers</td>
+                    <td>{{ user.followers_url }}</td>
+                  </tr>
+
+                  <tr>
+                  <tr>
+                    <td>Following</td>
+                    <td>{{ user.following_url}}</td>
+                  </tr>
+                  <tr>
+                    <td>Created</td>
+                    <!-- <td>{{user.createdAt | timeAgo}}</td> -->
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td appUser="">{{ user.mail }}</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <a href="{{user.repo_url}}" class="btn btn-primary">View User on Github</a>
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <p style="font-size: 12px;">Powered by GithubAPI</p>
+        </div>
+
+      </div>
