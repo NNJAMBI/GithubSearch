@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Users } from '../users';
 import { Repository } from '../repository';
 import { ProfileService } from '../profile-service/profile.service';
+import { Injectable } from'@angular/core';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-profile',

@@ -29,13 +29,13 @@ export class UserComponent implements OnInit {
    this.user = this.profileService.user;
   console.log(this.user);
 
-   this.profileService.getReposInfo();
+   this.profileService.getReposInfo;
    this.userRepos = this.profileService.newRepo;
  }
 
   ngOnInit() {
 
-    this.profileService.getReposInfo();
+    this.profileService.getReposInfo;
     this.repos = this.profileService.repo;
     this.profileService.getUserInfo();
     this.user = this.profileService.user;

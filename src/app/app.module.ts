@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProfileService } from './profile-service/profile.service';
 
 
+
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -12,6 +13,7 @@ import { UserComponent } from './user/user.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { TimeAgoPipe } from './time-ago.pipe';
+import { UserDirective } from './user.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { TimeAgoPipe } from './time-ago.pipe';
     NavbarComponent,
     ProfileComponent,
     UserComponent,
-    TimeAgoPipe
+    TimeAgoPipe,
+    UserDirective
   ],
   imports: [
     BrowserModule,
