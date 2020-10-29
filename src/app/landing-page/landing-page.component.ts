@@ -12,16 +12,15 @@ export class LandingPageComponent implements OnInit {
   constructor(private service: ProfileService) { }
 
   ngOnInit(): void {
-  //   this.service.getUserInfo().subscribe(res => {
-  //     console.log(res)
-  //     this.user = res
-  //   })
-  //   this.service.getReposInfo().subscribe(res => {
-  //     console.log(res);
-  //     this.repos = res;
-  //   })
+    // this.service.getUserInfo().subscribe(res => {
+    //   console.log(res)
+    //   this.user = res
+    // })
+    // this.service.getReposInfo().subscribe(res => {
+    //   console.log(res);
+    //   this.repos = res;
+    // })
 
-  // }
+  }
 
-}
 }
