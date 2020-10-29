@@ -1,0 +1,18 @@
+.navbar-dark a {
+    /*float: left;*/
+    display: inline-table;
+    color: dodgerblue;
+    text-align: center;
+    padding: 15px 17px;
+    font-size: 50px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar-dark {
+    overflow: hidden;
+    align-items: baseline;
+}
