@@ -7,8 +7,8 @@ import { ProfileService } from '../profile-service/profile.service';
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit {
-  user;
-  repos;
+  // user;
+  // repos;
   constructor(private service: ProfileService) { }
 
   ngOnInit(): void {

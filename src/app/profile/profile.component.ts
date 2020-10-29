@@ -27,11 +27,11 @@ export class ProfileComponent implements OnInit {
     this.profileService.getUserInfo;
     console.log(this.user);
 
-    this.profileService.getReposInfo();
+    this.profileService.getReposInfo(this.userName);
     this.userRepos = this.profileService.newRepo;
   }
   ngOnInit(): void {
-    this.profileService.getReposInfo();
+    this.profileService.getReposInfo(this.userName);
     this.repos = this.profileService.repo;
     this.profileService.getUserInfo();
     this.user = this.profileService.user;
