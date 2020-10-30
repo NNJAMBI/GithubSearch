@@ -21,17 +21,17 @@ export class UserComponent implements OnInit {
 
   constructor(private profileService: ProfileService) {
   }
- findProfile() {
+  findProfile() {
 
-   this.profileService.updateProfile(this.userName);
+    this.profileService.updateProfile(this.userName);
 
-   this.profileService.getUserInfo();
-   this.user = this.profileService.user;
-  console.log(this.user);
+    this.profileService.getUserInfo();
+    this.user = this.profileService.user;
+    console.log(this.user);
 
-   this.profileService.getReposInfo;
-   this.userRepos = this.profileService.newRepo;
- }
+    this.profileService.getReposInfo;
+    this.userRepos = this.profileService.newRepo;
+  }
 
   ngOnInit() {
 
